@@ -1,0 +1,38 @@
+/* This is the common CSS design for all the pages */
+/*body margin, navigation bar design, header, footer will be common in all the web pages*/
+/*some others features like button, textarea <p> or <h..> tag will aslo have consistent size, design and property*/
+
+/*main css code starts here*/
+
+/* body margin to 0*/
+body {
+	margin: 0;
+}
+
+/*adding header design and colour*/
+header {
+	background-color: #1239;
+	padding: 20px;
+}
+
+/*inline display for div of header only*/
+header div {
+	display: inline-block;
+}
+
+/*float right for the "right" class of header only*/
+header .right {
+	float: right;
+}
+
+/*changing the default property of a tag of the nav nad also a tag of logo/website name*/
+header a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+}
+
+/*changing colour of active navigation bar*/
+.active {
+	background-color: #1249;
+}
