@@ -7,6 +7,7 @@
 /* body margin to 0*/
 body {
 	margin: 0;
+	font-family: sans-serif;
 }
 
 /*adding header design and colour*/
@@ -29,10 +30,24 @@ header .right {
 header a {
 	text-decoration: none;
 	color: white;
-	padding: 20px;
+	padding: 0 20px;
+	font-weight: bold;
 }
 
 /*changing colour of active navigation bar*/
 .active {
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px golf, 0 0 40px red, 0 0 50px gold, 0 0 60px blue, 0 0 70px red;
+}
+
+
+.right a:hover {
 	background-color: #1249;
+	padding: 20px 50px;
+	transition: 1s;
+}
+.left a:hover {
+	transition: 1s;
+	padding-bottom: 0;
+	text-shadow: 2px 2px 8px #CE5937;
 }
