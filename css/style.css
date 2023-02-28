@@ -17,7 +17,7 @@ header {
 }
 
 /*inline display for div of header only*/
-header div {
+header div{
 	display: inline-block;
 }
 
@@ -34,20 +34,53 @@ header a {
 	font-weight: bold;
 }
 
-/*changing colour of active navigation bar*/
+/*changing colour of active page of navigation menu*/
 .active {
-	text-transform: uppercase;
 	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px golf, 0 0 40px red, 0 0 50px gold, 0 0 60px blue, 0 0 70px red;
+	background-color: #1349;
+	padding: 20px 50px;
 }
 
-
+/*hover property for navigation menu*/
 .right a:hover {
 	background-color: #1249;
 	padding: 20px 50px;
 	transition: 1s;
 }
+
+/*hover property for logo/website name*/
 .left a:hover {
 	transition: 1s;
 	padding-bottom: 0;
 	text-shadow: 2px 2px 8px #CE5937;
+}
+
+/*adding design and colour to the footer*/
+footer {
+	background-color: #233142;
+	padding: 50px;
+	color: white;
+}
+
+/*flexing text-box and subscription button of footer-form*/
+.footer-form {
+	display: flex;
+}
+
+/*adding design and resizing the inputbox and button of footer-form*/
+.footer-form input, button{
+	width: 250px;
+	height: 25px;
+	margin: 0;
+	border-style: none;
+	padding: 5px;
+}
+
+/*overriding the button for resizing and making perfect fit*/
+.footer-form button {
+	width: 40px;
+	height: 35px;
+	background-color: #8ef6e4;
+	color: white;
+	font-weight: bold;
 }
