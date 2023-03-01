@@ -10,6 +10,7 @@ body {
 	font-family: sans-serif;
 }
 
+/******************************************************************************************/
 /*adding header design and colour*/
 header {
 	background-color: #1239;
@@ -27,24 +28,32 @@ header .right {
 }
 
 /*changing the default property of a tag of the nav nad also a tag of logo/website name*/
-header a {
+a {
 	text-decoration: none;
 	color: white;
-	padding: 0 20px;
 	font-weight: bold;
+	padding: 20px 30px 20.4px 30px;
+	margin: 0;
 }
+.material-symbols-outlined {
+	display: none;
+}
+
+
+/***********design for header ends************************/
+/************************************************************************************/
 
 /*changing colour of active page of navigation menu*/
 .active {
 	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px golf, 0 0 40px red, 0 0 50px gold, 0 0 60px blue, 0 0 70px red;
 	background-color: #1349;
-	padding: 20px 50px;
+	padding: 20px 30px 20.4px 30px;
 }
 
 /*hover property for navigation menu*/
 .right a:hover {
 	background-color: #1249;
-	padding: 20px 50px;
+	padding: 20px 30px 20.4px 30px;
 	transition: 1s;
 }
 
@@ -55,11 +64,22 @@ header a {
 	text-shadow: 2px 2px 8px #CE5937;
 }
 
+/****************************************************************************************/
 /*adding design and colour to the footer*/
+/*layout type grid*/
 footer {
 	background-color: #233142;
 	padding: 50px;
 	color: white;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+/***********************************************************************************/
+/*****for all emements of footer-left-div starts here*****/
+/*float inner div to the left*/
+.footer-left-div-inner {
+	float: left;
 }
 
 /*flexing text-box and subscription button of footer-form*/
@@ -73,14 +93,167 @@ footer {
 	height: 25px;
 	margin: 0;
 	border-style: none;
-	padding: 5px;
+	padding: 5px 10px;
+	border-color: none;
+	box-shadow: none;
+	outline-style: none;
 }
 
-/*overriding the button for resizing and making perfect fit*/
+/*overriding concept used for minimizing repetation of similar property*/
+/*margin, border-style and padding has similar property on both footer-form input and button*/
+/*However we override width and height of button to maintain consistancy on both the element*/
 .footer-form button {
 	width: 40px;
 	height: 35px;
-	background-color: #8ef6e4;
+	padding: 5px;
+	background-color: #41d8bf;
 	color: white;
 	font-weight: bold;
 }
+/******For all elements of footer-left-div ends here****/
+/********************************************************************************************************/
+
+
+/*********************************************************************************************************/
+/*****For all elements of footer-center-div starts here****/
+/*Align inner div to the center*/
+.footer-center-div-inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+/*removing unwanted padding of ul to maintain center position*/
+.footer-center-div-inner ul {
+	padding: 0;
+}
+
+/*adding top and bottom padding to maintain gap between list*/
+.footer-center-div-inner ul li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/****For all elements of footer-center-div ends here****/
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/****for all elements of footer-right-div starts here****/
+/*float inner div to the right*/
+.footer-right-div-inner {
+	float: right;
+}
+
+/*aligh h1 to the left corner of inner div*/
+.footer-right-div-inner h1 {
+	text-align: left;
+}
+
+/*align ul to the center*/
+.footer-right-div-inner a{
+	text-align: center;
+}
+
+.footer-right-div-inner-aligner-a {
+	margin-left: 50px;
+}
+
+.footer-right-div-inner-insider {
+	align-self: center;
+}
+/*padding given to maintain a gap between element*/
+.footer-right-div-inner a {
+	padding: 0 10px;
+}
+/******for all the elements of footer-right-div ends***********/
+/***********design for footer ends*****************/
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/**********Responsive website CSS Design for Mobile/Tablet Screen Frame***********/
+@media only screen and (max-width: 875px) {
+
+	/*removing web-nav menu*/
+	header .web-nav a{
+		display: none;
+	}
+
+	.material-symbols-outlined {
+		display: block;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	/*changing the layout of footer in mobile version*/
+	footer {
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	/*changing the size to lower*/
+	footer h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	/*margin to maintain gap between div*/
+	.footer-left-div, .footer-center-div, .footer-right-div {
+		margin: 20px;
+	}
+
+	/*re-align left div to the center*/
+	.footer-left-div-inner {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 250px;
+	}
+
+	/*************************************************************************************/
+	/****for all elements of footer-center-div****/
+	/*re-align center div*/
+	.footer-center-div-inner {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 250px;
+	}
+
+	/*align the quick link to the center*/
+	.footer-center-div-inner ul li {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 150px;
+	}
+	/****for all elements of footer-center-div ends****/
+	/********************************************************************************************/
+
+
+	/*****************************************************************************************************/
+	/****for all elements of footer-rignt-div****/
+	/*re-align right div to the center*/
+	.footer-right-div-inner {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 250px;
+	}
+
+	/*align ul to the center*/
+	.footer-right-div-inner-aligner-a {
+		margin-left: 60px;
+	}
+	/****for all elements of footer-right-div ends****/
+	/********************************************************************************************************/
+
+	/*for all h1 elements of footer*/
+	.footer-center-div-inner h1, .footer-right-div-inner h1{
+		text-align: center;
+	}
+}
+/**********Responsive website layout design css ends here**********/
+/************************************************************************************************************/
+
+
+
