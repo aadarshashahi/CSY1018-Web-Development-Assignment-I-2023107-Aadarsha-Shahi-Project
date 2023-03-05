@@ -1,119 +1,180 @@
 <!--These are elements for index.html page-->
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<!--This is the link for External CSS that add design to header and footer-->
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
 
-		<!--Title of the website-->
-		<title>Portfolio</title>
+<!--Body of the page starts here-->
+<body>
+	<!--This is the header of the page-->
+	<header id="header">	<!--Header Id for scroll up behaviour-->
 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+			<!--This div should float left-->
+			<div class="left">
+				<a>Aadarsha</a>
+			</div>
+			<!--left div ends here-->
 
-		<!--calling the external CSS code here for common property-->
-		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
-	</head>
+			<!--This div should float right-->
+			<div class="right">
 
-	<!--body of index.html starts here-->
-	<body>
+				<!--Start of navigation bar-->
+				<nav>
 
-		<!--page header starts here-->
-		<!--creating id for header to make a scroll up property when, logo/website name is clicked-->
-		<header id="header">	<!--creating id for header to make a scroll up property when, logo/website name is clicked-->
-		<!--this header have two div, for logo and for navigation bar-->
+					<!--creating navigation menu-->
+					<ul>
 
-			<!--placeholder div for logo or website name-->
-			<div class="left">		<!--class name left to float left from CSS-->
-				<a href="index.html#header">Portfolio</a>		<!--href tag to make scroll up feature-->
-			</div>					<!--closing the div that have class right-->
+						<!--listing all navigation menu items-->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="workexperience.html">Work Experience</a></li>
+						<li><a href="sitereport.html">Site Report</a></li>
+					</ul>
+					<!--closing of navigation menu-->
 
-			<!--placeholder div for navigation bar-->
-			<div class="right">		<!--class name right to float right from CSS-->
-
-				<!--navigation bar starts here-->
-				<nav class="web-nav">
-					
-					<!--listing all required navigation menu-->
-					<a class="active" href="index.html">Home</a>
-					<a href="portfolio.html">Portfolio</a>
-					<a href="contact.html">Contact</a>
-					<a href="workexperience.html">Work Experience</a>
-					<a href="sitereport.html">Site Report</a>
-					<span class="material-symbols-outlined">menu</span>
 				</nav>
 				<!--Navigation bar ends-->
 
-			</div>					
-			<!--closing the div that have class right-->
-
-		</header>
-		<!--page header ends here-->
-
-		<!--page footer starts here-->
-
-		<footer>
-			<!--this footer has three div-->
-
-			<!--footer-left-div starts here-->
-			<div class="footer-left-div">
-
-				<!--footer-left-div-inner starts here-->
-				<div class="footer-left-div-inner">
-					<h1>Newsletter Signup</h1>
-		
-					<!--Newsletter subscription form start here-->
-					<!---Form is required to make submit property send an email-->
-					<!--Class given to identity this is footer-form only for newsletter subscription-->
-					<form class="footer-form">		
-						<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" />
-					<button type="submit" name="submit-button" class="subscribe-button">Go</button>
-					</form>
-					<!--footer form ends here-->
-
-				</div>
-				<!--footer-left-div-inner ends here-->
-
 			</div>
-			<!--footer-left-div ends here-->
+			<!--right div ends here-->
+	</header>
+	<!--Header Ends Here-->
 
-			<!--footer center div starts here-->
-			<div class="footer-center-div">
+	<main>
+		<section class="section-1">
+			<div class="left">
+				<div class="left-inner">
+					<h6>This is</h6>
+					<h1>Aadarsha Shahi</h1>
+					<p> I am Aadarsha Shahi, I am from Gorkha. I am enrolled to NAMI college for Bachelor in Software Enigneering Program.</p>
+					<button class="read-more">Read More</button>
+				</div>
+			</div>
 
-				<!--footer center-div-inner starts here-->
-				<div class="footer-center-div-inner">
-					<h1>Quick Link</h1>
+			<div class="right">
+				<div class="right-inner">
+					<img src="./image/image.jpg" height="400px" width="auto" />
+				</div>
+			</div>
+		</section>
+
+		<section class="section-2">
+			<div class="left">
+				<div class="left-inner">
+					<img src="./image/image.jpg" height="400px" width="auto" />
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-inner">
+					<h6>About Myself</h6>
+					<h1>Personal Details</h1>
+					<p>I am from Gorkha, currently I am living in Baudha, Kathmandu</p>
+					<button class="read-more">Read More</button>
+				</div>
+			</div>
+		</section>
+		<section class="section-3">
+			<h1>Basic Skills</h1>
+			<p>I have some basic skill that I earned through online courses and practices</p>
+			<div class="grid-container">
+				<div class="grid-element">
+					<p><span class="material-symbols-outlined">code</span></p>
+					<a>Web Design</a>
+				</div>
+				<div class="grid-element">
+					<p><span class="material-symbols-outlined">rocket_launch</span></p>
+					<a>Graphic Design</a>
+				</div>
+				<div class="grid-element">
+					<p><span class="material-symbols-outlined">photo_camera</span></p>
+					<a>Photography</a>
+				</div>
+				<div class="grid-element">
+					<a>Photo Editing</a>
+				</div>
+				<div class="grid-element">
+					<a>Digital Marketing</a>
+				</div>
+				<div class="grid-element">
+					<a>Microsoft Offices</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+
+		<div class="main">
+
+		<!--Start of footer left div--->
+		<div class="left">
+
+			<!--footer left inner div starts here-->
+			<div class="left-inner">
+				<h1>Newsletter Signup</h1>
+				<!--Newsletter subscription form start here-->
+				<!---Form is required to make submit property send an email-->
+				<!--Class given to identity this is footer-form only for newsletter subscription-->
+				<form class="footer-form">		
+					<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" />
+				<button type="submit" name="submit-button" class="subscribe-button"><i class="fa fa-paper-plane-o"></i></button>
+				</form>
+				<!--footer form ends here-->
+			</div>
+			<!--footer left inner div ends here-->
+
+		</div>
+		<!--end of footer left div-->
+
+		<!--footer center div starts here-->
+		<div class="center">
+			
+			<!--footer center inner div starts here-->
+			<div class="center-inner">
+				<h1>Quick Link</h1>
 					<ul>
 						<li><a href="">Galary</a></li>
 						<li><a href="">Blog</a></li>
 						<li><a href="">Sitereport</a></li>
 					</ul>
-				</div>
-				<!--footer-center-div-inner ends here-->
-
 			</div>
-			<!--footer-center-div ends here-->
+			<!--footer center inner div ends here-->
 
-			<!--footer-right-div-starts here-->
-			<div class="footer-right-div">
+		</div>
+		<!--footer center div ends here-->
 
-				<!--footer-right-div-inner starts here-->
-				<div class="footer-right-div-inner">
-					<h1>Get connected</h1>
-							<a class="footer-right-div-inner-aligner-a" href="">F</a>
-							<a href="">I</a>
-							<a href="">T</a>
-							<a href="">L</a>
-				</div>
-				<!--footer-right-div-inner ends here-->
-
+		<!--footer right div starts here-->
+		<div class="right">
+			
+			<!--footer right inner div starts here-->
+			<div class="right-inner">
+				<h1>Get connected</h1>
+					<ul>
+						<li><a href="">F</a></li>
+						<li><a href="">I</a></li>
+						<li><a href="">T</a></li>
+						<li><a href="">L</a></li>
+					</ul>
 			</div>
-			<!--footer-right-div ends here-->
+			<!--footer right inner div ends here-->
 
-		</footer>
-		<!--footer of the page ends here-->
+		</div>
+		<!--footer right div ends here-->
 
-	</body>
-	<!--closing the body of index.html-->
+	</div>
 
+	</footer>
+	<!--footer ends here-->
+
+</body>
 </html>
-<!--This is the end of index.html page-->

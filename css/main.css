@@ -1,0 +1,21 @@
+/*This is the common property for <main> part of all the pages*/
+
+/*margin to 0*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+}
+
+/*for all button with class name read-more*/
+.read-more {
+	width: 150px;
+	height: 40px;
+	margin-top: 30px;
+	background-color: #41d8bf;
+}
+
+/*padding for all sections of all pages*/
+section {
+	padding: 100px;
+}

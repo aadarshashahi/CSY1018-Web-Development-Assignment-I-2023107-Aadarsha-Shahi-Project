@@ -1,259 +1,169 @@
-/* This is the common CSS design for all the pages */
-/*body margin, navigation bar design, header, footer will be common in all the web pages*/
-/*some others features like button, textarea <p> or <h..> tag will aslo have consistent size, design and property*/
+/*This is the main stylesheet for header and footer of the overall pages of the website*/
 
-/*main css code starts here*/
-
-/* body margin to 0*/
-body {
+/* setting body margin to 0*/
+* {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: Verdana;
 }
 
-/******************************************************************************************/
-/*adding header design and colour*/
+/*adding design to header*/
 header {
-	background-color: #1239;
 	padding: 20px;
+	background-color: #1239;
+	color: #d9dad7;
+	position: sticky;
+	top: 0;
 }
-
-/*inline display for div of header only*/
-header div{
+header div {
 	display: inline-block;
+	margin: 0;
 }
-
-/*float right for the "right" class of header only*/
+header .left {
+	font-weight: 200px;
+	font-size: 28px;
+}
 header .right {
 	float: right;
 }
+header .right nav{
+	margin-top: 10px;
+}
 
-/*changing the default property of a tag of the nav nad also a tag of logo/website name*/
-a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	padding: 20px 30px 20.4px 30px;
+/* header ul style to none */
+ul {
+	list-style-type: none;
 	margin: 0;
 }
-.material-symbols-outlined {
-	display: none;
+/* setting default property of a to designed propert*/
+header a{
+	text-decoration: none;
+	color: #d9dad7;
+}
+footer a{
+	text-decoration: none;
+	color: #d9dad7;
 }
 
-
-/***********design for header ends************************/
-/************************************************************************************/
-
-/*changing colour of active page of navigation menu*/
-.active {
-	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px golf, 0 0 40px red, 0 0 50px gold, 0 0 60px blue, 0 0 70px red;
-	background-color: #1349;
-	padding: 20px 30px 20.4px 30px;
+/*navigation-menu items inline */
+header nav ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 0 20px;
 }
 
-/*hover property for navigation menu*/
-.right a:hover {
-	background-color: #1249;
-	padding: 20px 30px 20.4px 30px;
-	transition: 1s;
-}
-
-/*hover property for logo/website name*/
-.left a:hover {
-	transition: 1s;
-	padding-bottom: 0;
-	text-shadow: 2px 2px 8px #CE5937;
-}
-
-/****************************************************************************************/
-/*adding design and colour to the footer*/
-/*layout type grid*/
+/*adding design to footer*/
 footer {
-	background-color: #233142;
+	background-color: #1a2639;
+	color: #d9dad7;
 	padding: 50px;
-	color: white;
+	justify-content: center;
+}
+
+/*main container div of footer*/
+footer .main {
 	display: grid;
 	grid-template-columns: auto auto auto;
+
 }
 
-/***********************************************************************************/
-/*****for all emements of footer-left-div starts here*****/
-/*float inner div to the left*/
-.footer-left-div-inner {
-	float: left;
-}
-
-/*flexing text-box and subscription button of footer-form*/
-.footer-form {
+/*footer newsletter subscription form*/
+footer form {
 	display: flex;
+	padding: 20px 0;
 }
 
-/*adding design and resizing the inputbox and button of footer-form*/
-.footer-form input, button{
+/*form elements default property modified*/
+footer form input, button {
 	width: 250px;
-	height: 25px;
-	margin: 0;
+	height: 30px;
 	border-style: none;
-	padding: 5px 10px;
-	border-color: none;
+	padding: 2px 5px;
 	box-shadow: none;
 	outline-style: none;
 }
 
-/*overriding concept used for minimizing repetation of similar property*/
-/*margin, border-style and padding has similar property on both footer-form input and button*/
-/*However we override width and height of button to maintain consistancy on both the element*/
-.footer-form button {
+/*overriding the property of button to minimize repetation of CSS code*/
+footer form button {
 	width: 40px;
-	height: 35px;
-	padding: 5px;
+	height: 34px;
+	border-style: none;
 	background-color: #41d8bf;
-	color: white;
-	font-weight: bold;
-}
-/******For all elements of footer-left-div ends here****/
-/********************************************************************************************************/
-
-
-/*********************************************************************************************************/
-/*****For all elements of footer-center-div starts here****/
-/*Align inner div to the center*/
-.footer-center-div-inner {
-	margin-left: auto;
-	margin-right: auto;
-	width: 200px;
+	font-weight: 200px;
+	font-size: 18px;
 }
 
-/*removing unwanted padding of ul to maintain center position*/
-.footer-center-div-inner ul {
+/*margin setting for center div*/
+footer .center {
+	margin: 0 5%;
+}
+
+/*margin setting for center dv ul*/
+footer .center ul {
+	margin: 0 20px;
 	padding: 0;
 }
 
-/*adding top and bottom padding to maintain gap between list*/
-.footer-center-div-inner ul li {
-	padding-top: 10px;
-	padding-bottom: 10px;
+/*padding for center h1 maintain a bottom gap*/
+footer .center h1 {
+	padding-bottom: 20px;
 }
-/****For all elements of footer-center-div ends here****/
-/***********************************************************************************************************/
 
+/*padding for li maintain top-bottom space between list*/
+footer .center li {
+	padding: 5px 0;
+}
 
-/***********************************************************************************************************/
-/****for all elements of footer-right-div starts here****/
-/*float inner div to the right*/
-.footer-right-div-inner {
+/*floating right for right div*/
+footer .right-inner {
 	float: right;
+	margin-right: 5%;
 }
 
-/*aligh h1 to the left corner of inner div*/
-.footer-right-div-inner h1 {
-	text-align: left;
+/*inline display and padding to maintain gaps*/
+footer .right-inner li {
+	display: inline-block;
+	padding: 10% 5%;
 }
 
-/*align ul to the center*/
-.footer-right-div-inner a{
-	text-align: center;
+/*changing dont sixe of all h1 elements of footer*/
+footer h1 {
+	font-size: 22px;
 }
 
-.footer-right-div-inner-aligner-a {
-	margin-left: 50px;
-}
+@media only screen and (max-width: 900px) {
 
-.footer-right-div-inner-insider {
-	align-self: center;
-}
-/*padding given to maintain a gap between element*/
-.footer-right-div-inner a {
-	padding: 0 10px;
-}
-/******for all the elements of footer-right-div ends***********/
-/***********design for footer ends*****************/
-/***********************************************************************************************/
-
-
-/***********************************************************************************************/
-/**********Responsive website CSS Design for Mobile/Tablet Screen Frame***********/
-@media only screen and (max-width: 875px) {
-
-	/*removing web-nav menu*/
-	header .web-nav a{
+	nav {
 		display: none;
 	}
-
-	.material-symbols-outlined {
-		display: block;
-		font-size: 30px;
-		font-weight: bold;
-	}
-
-	/*changing the layout of footer in mobile version*/
-	footer {
-		display: grid;
+	footer .main {
 		grid-template-columns: auto;
 	}
-
-	/*changing the size to lower*/
-	footer h1 {
-		font-size: 20px;
+	footer .main .left-inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 400px;
+	}
+	footer .main .left-inner {
 		text-align: center;
 	}
-
-	/*margin to maintain gap between div*/
-	.footer-left-div, .footer-center-div, .footer-right-div {
-		margin: 20px;
+	footer .main .left-inner form {
+		margin: 0 7.5%;
 	}
-
-	/*re-align left div to the center*/
-	.footer-left-div-inner {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 250px;
-	}
-
-	/*************************************************************************************/
-	/****for all elements of footer-center-div****/
-	/*re-align center div*/
-	.footer-center-div-inner {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 250px;
-	}
-
-	/*align the quick link to the center*/
-	.footer-center-div-inner ul li {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 150px;
-	}
-	/****for all elements of footer-center-div ends****/
-	/********************************************************************************************/
-
-
-	/*****************************************************************************************************/
-	/****for all elements of footer-rignt-div****/
-	/*re-align right div to the center*/
-	.footer-right-div-inner {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 250px;
-	}
-
-	/*align ul to the center*/
-	.footer-right-div-inner-aligner-a {
-		margin-left: 60px;
-	}
-	/****for all elements of footer-right-div ends****/
-	/********************************************************************************************************/
-
-	/*for all h1 elements of footer*/
-	.footer-center-div-inner h1, .footer-right-div-inner h1{
+	footer .main .center-inner {
 		text-align: center;
+		margin-top: 20px;
 	}
+	footer .main .right-inner {
+		float: none;
+		text-align: center;
+		margin-top: 40px;
+	}
+	footer .main .right-inner h1 {
+		margin-left: 30px;
+	}
+	footer .main .right-inner ul {
+		margin-left: 30px;
+		padding-left: 3px;
+	}
+
 }
-/**********Responsive website layout design css ends here**********/
-/************************************************************************************************************/
-
-
-

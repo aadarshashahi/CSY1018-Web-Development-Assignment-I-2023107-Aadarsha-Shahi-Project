@@ -1,0 +1,41 @@
+
+section {
+	padding: 100px;
+}
+.section-1, .section-2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: #bbe4e9;
+}
+
+.section-2 {
+	background-color: #f6f5f5;
+}
+.section-1 .left-inner {
+	padding-right: 50px;
+}
+.section-1 h6 {
+	font-size: 28px;
+}
+.section-1 h1 {
+	font-size: 48px;
+}
+.section-1 p {
+	font-size: 18px;
+}
+.section-1 h6, h1, p {
+	padding-top: 50px;
+}
+
+.section-3 .grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.section-3 .grid-element {
+	padding: 100px;
+}
+.read-more {
+	width: 150px;
+	height: 40px;
+	margin-top: 30px;
+}

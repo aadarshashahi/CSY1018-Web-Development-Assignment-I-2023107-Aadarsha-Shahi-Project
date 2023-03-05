@@ -4,113 +4,117 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!--Title of the website-->
 	<title>Portfolio</title>
-
-	<!--calling the external CSS code here for common property-->
+	<!--This is the link for External CSS that add design to header and footer-->
 	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
-<!--body of contact.html starts here-->
+<!--Body of the page starts here-->
 <body>
+	<!--This is the header of the page-->
+	<header id="header">	<!--Header Id for scroll up behaviour-->
 
-	<!--page header starts here-->
-	<header id="header">	<!--creating id for header to make a scroll up property when, logo/website name is clicked-->
+			<!--This div should float left-->
+			<div class="left">
+				<a>Aadarsha</a>
+			</div>
+			<!--left div ends here-->
 
-		<!--placeholder div for logo or website name-->
-		<div class="left">		<!--class name left to float left from CSS-->
-			<a href="contact.html">Portfolio</a>	<!--href tag to make scroll up feature-->
-		</div>					<!--closing the div that have class right-->
+			<!--This div should float right-->
+			<div class="right">
 
-		<!--placeholder div for navigation bar-->
-		<div class="right">		<!--class name right to float right from CSS-->
+				<!--Start of navigation bar-->
+				<nav>
 
+					<!--creating navigation menu-->
+					<ul>
 
-			<!--navigation bar starts here-->
-			<nav>
+						<!--listing all navigation menu items-->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="workexperience.html">Work Experience</a></li>
+						<li><a href="sitereport.html">Site Report</a></li>
+					</ul>
+					<!--closing of navigation menu-->
 
-				<!--listing all required navigation menu-->
-				<a href="index.html">Home</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a class="active" href="contact.html">Contact</a>
-				<a href="workexperience.html">Work Experience</a>
-				<a href="sitereport.html">Site Report</a>
-			</nav>
-			<!--Navigation bar ends-->
-
-
-		</div>					
-		<!--closing the div that have class right-->
-
-
-	</header>
-	<!--page header ends here-->
-
-
-
-		<!--page footer starts here-->
-		<footer>
-			<!--this footer has three div-->
-
-			<!--footer-left-div starts here-->
-			<div class="footer-div">
-
-				<!--footer-left-div-inner starts here-->
-				<div class="footer-left-div-inner">
-					<h1>Newsletter Signup</h1>
-		
-					<!--Newsletter subscription form start here-->
-					<!---Form is required to make submit property send an email-->
-					<!--Class given to identity this is footer-form only for newsletter subscription-->
-					<form class="footer-form">		
-						<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" />
-					<button type="submit" name="submit-button" class="subscribe-button">Go</button>
-					</form>
-					<!--footer form ends here-->
-				</div>
-				<!--footer-left-div-inner ends here-->
+				</nav>
+				<!--Navigation bar ends-->
 
 			</div>
-			<!--footer-left-div ends here-->
+			<!--right div ends here-->
+	</header>
+	<!--Header Ends Here-->
 
-			<!--footer center div starts here-->
-			<div class="footer-center-div">
 
-				<!--footer center-div-inner starts here-->
-				<div class="footer-center-div-inner">
-					<h1>Quick Link</h1>
+
+	<footer>
+
+		<div class="main">
+
+		<!--Start of footer left div--->
+		<div class="left">
+
+			<!--footer left inner div starts here-->
+			<div class="left-inner">
+				<h1>Newsletter Signup</h1>
+				<!--Newsletter subscription form start here-->
+				<!---Form is required to make submit property send an email-->
+				<!--Class given to identity this is footer-form only for newsletter subscription-->
+				<form class="footer-form">		
+					<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" />
+				<button type="submit" name="submit-button" class="subscribe-button"><i class="fa fa-paper-plane-o"></i></button>
+				</form>
+				<!--footer form ends here-->
+			</div>
+			<!--footer left inner div ends here-->
+
+		</div>
+		<!--end of footer left div-->
+
+		<!--footer center div starts here-->
+		<div class="center">
+			
+			<!--footer center inner div starts here-->
+			<div class="center-inner">
+				<h1>Quick Link</h1>
 					<ul>
 						<li><a href="">Galary</a></li>
 						<li><a href="">Blog</a></li>
 						<li><a href="">Sitereport</a></li>
 					</ul>
-				</div>
-				<!--footer-center-div-inner ends here-->
-
 			</div>
-			<!--footer-center-div ends here-->
+			<!--footer center inner div ends here-->
 
-			<!--footer-right-div-starts here-->
-			<div class="footer-right-div">
+		</div>
+		<!--footer center div ends here-->
 
-				<!--footer-right-div-inner starts here-->
-				<div class="footer-right-div-inner">
-					<h1>Get connected</h1>
-					<a href="">F</a>
-					<a href="">I</a>
-					<a href="">T</a>
-					<a href="">L</a>
-				</div>
-				<!--footer-right-div-inner ends here-->
-
+		<!--footer right div starts here-->
+		<div class="right">
+			
+			<!--footer right inner div starts here-->
+			<div class="right-inner">
+				<h1>Get connected</h1>
+					<ul>
+						<li><a href="">F</a></li>
+						<li><a href="">I</a></li>
+						<li><a href="">T</a></li>
+						<li><a href="">L</a></li>
+					</ul>
 			</div>
-			<!--footer-right-div ends here-->
+			<!--footer right inner div ends here-->
 
+		</div>
+		<!--footer right div ends here-->
 
-		</footer>
-		<!--footer of the page ends here-->
+	</div>
 
+	</footer>
+	<!--footer ends here-->
 
 </body>
 </html>
