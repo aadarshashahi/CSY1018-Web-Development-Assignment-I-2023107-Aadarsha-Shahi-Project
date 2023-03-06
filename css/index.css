@@ -1,41 +1,86 @@
+/*this is the CSS property applied for <main> part of index.html page only*/
 
-section {
-	padding: 100px;
-}
+/*for common property of section-1 and 2*/
 .section-1, .section-2 {
 	display: grid;
 	grid-template-columns: auto auto;
 	background-color: #bbe4e9;
 }
 
+/*overriding background colour of section 2*/
 .section-2 {
 	background-color: #f6f5f5;
 }
+
+/*for section-1 left-inner div*/
 .section-1 .left-inner {
 	padding-right: 50px;
 }
+
+/*for h6 tag of section-1 only*/
 .section-1 h6 {
 	font-size: 28px;
 }
+
+/*for h1 tag of section-1 only*/
 .section-1 h1 {
 	font-size: 48px;
 }
+
+/*for p tag of section-1 only*/
 .section-1 p {
 	font-size: 18px;
 }
+
+/*for common property of h6, h1 and p*/
 .section-1 h6, h1, p {
 	padding-top: 50px;
 }
 
+.section-1 img, .section-2 img {
+	height: 400px;
+	width: auto;
+}
+
+/*for grid-container div of section-3 only*/
 .section-3 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
 }
+
+/* for grid-element of section-2 only*/
 .section-3 .grid-element {
 	padding: 100px;
 }
-.read-more {
-	width: 150px;
-	height: 40px;
-	margin-top: 30px;
+
+.section-4 .grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.section-4 .grid-item {
+	padding: 0;
+	grid-gap: 0;
+}
+
+@media only screen and (max-width: 900px) {
+	.section-1, .section-2 {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.section-3, .section-4 {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.section-1 img{
+	padding-top: 50px;
+	}
+	.section-2 img{
+	padding-bottom: 50px;
+	}
+	.section-2 .grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
 }
