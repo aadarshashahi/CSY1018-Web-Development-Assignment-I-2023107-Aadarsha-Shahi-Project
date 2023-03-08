@@ -1,5 +1,7 @@
 /*This is the main stylesheet for header and footer of the overall pages of the website*/
-
+:root {
+	--orange : #ff6f3c;
+}
 /* setting body margin to 0*/
 * {
 	margin: 0;
