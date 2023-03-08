@@ -19,3 +19,19 @@
 section {
 	padding: 100px;
 }
+
+.master-section {
+	background-color: #9fd3c7;
+	padding: 100px 0;
+	color: #ececec;
+}
+.master-section h1, h4{
+	font-size: 48px;
+	text-align: center;
+}
+.master-section h4 {
+	font-size: 22px;
+}
+.master-section h1 {
+	padding: 0;
+}
