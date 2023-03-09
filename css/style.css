@@ -1,6 +1,6 @@
 /*This is the main stylesheet for header and footer of the overall pages of the website*/
 :root {
-	--orange : #ff6f3c;
+	--fade1 : #e3f6f5;
 }
 /* setting body margin to 0*/
 * {
@@ -41,6 +41,11 @@ header a{
 	text-decoration: none;
 	color: #d9dad7;
 }
+header nav ul .hamburger {
+	display: none;
+	visibility: hidden;
+}
+
 footer a{
 	text-decoration: none;
 	color: #d9dad7;
@@ -75,7 +80,7 @@ footer form {
 }
 
 /*form elements default property modified*/
-footer form input, button {
+form input, button, textarea {
 	width: 250px;
 	height: 30px;
 	border-style: none;

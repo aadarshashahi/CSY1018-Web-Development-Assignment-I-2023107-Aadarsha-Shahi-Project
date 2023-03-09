@@ -35,3 +35,7 @@ section {
 .master-section h1 {
 	padding: 0;
 }
+.profile-img {
+	height: 400px;
+	width: auto;
+}

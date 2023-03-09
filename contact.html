@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 	<!--This is the link for External CSS that add design to header and footer-->
 	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/main.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/contact.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <!--Body of the page starts here-->
@@ -75,6 +75,51 @@
 			<!--right-div ends here-->
 
 		</section>
+
+		<section class="section-2">
+			<div class="grid-container">
+				<div class="grid-element icon">
+					<h3><span class="material-symbols-outlined">house</span></h3>
+				</div>
+
+				<div class="grid-element">
+					<h3>Boudha 06, Kathmandu <br/> Kathmandu, Bagmati, <br/> Nepal 44602</h3>
+				</div>
+				<div class="grid-element icon">
+					<h3><span class="material-symbols-outlined">call</span></h3>
+				</div>
+				<div class="grid-element">
+					<h3> +977 9806603797</h3>
+				</div>
+				<div class="grid-element icon">
+					<h3><span class="material-symbols-outlined">mail</span></h3>
+				</div>
+				<div class="grid-element">
+					<h3>aadarsha.2023107@nami.edu.np</h3>
+				</div>
+			</div> 
+			<div class="form">
+				<form>
+					<div>	
+						<input class="name" name="name" id="name" placeholder="Your Full Name" required/><br/>
+						<input type="email" name="email" placeholder="Enter your email" required/><br/>
+						<input type="text" name="subject" placeholder="Enter Subject"required/>
+					</div>
+					<div>
+						<textarea type="text" name="message" placeholder="Enter Your Message"required/></textarea><br/>
+						<button type="submit" name="Submit">Send Message</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="section-3">
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.4216555896098!2d85.33273132327665!3d27.691237312640244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bd77dff7bd%3A0x4e460f61db70187a!2z4KSt4KSV4KWN4KSk4KS_IOCkpeCkvuCkquCkviDgpLjgpKHgpJUsIEthdGhtYW5kdSA0NDYwMA!5e0!3m2!1sen!2snp!4v1677048920042!5m2!1sen!2snp" style="border:0; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+
+
 	</main>
 	<!--main part of contact.html ends here-->
 
@@ -92,7 +137,7 @@
 				<!---Form is required to make submit property send an email-->
 				<!--Class given to identity this is footer-form only for newsletter subscription-->
 				<form class="footer-form">		
-					<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" />
+					<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" required/>
 				<button type="submit" name="submit-button" class="subscribe-button"><i class="fa fa-paper-plane-o"></i></button>
 				</form>
 				<!--footer form ends here-->

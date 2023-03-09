@@ -1,0 +1,9 @@
+.section-1 {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.section-1 .right-div {
+	width: 500px;
+	padding: 50px;
+}
