@@ -11,7 +11,7 @@
 	padding: 50px;
 }
 .section-2 {
-	background-color: #dbd8e3;
+	background-color: #ecfeff;
 }
 .section-2 .master-div{
 	display: flex;
@@ -23,11 +23,11 @@
 	height: 200px;
 	width: 300px;
 	padding: 20px;
-	background-color: #e3f6f5;
+	background-color: #e1f6f4;
 	margin: 50px;
 }
 .section-2 .master-div .blank {
-	background-color: #dbd8e3;
+	background-color: #ecfeff;
 }
 .section-2 .master-div .timeline .dot{
 	height: 25px;

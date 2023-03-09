@@ -27,23 +27,31 @@
 			<!--This div should float right-->
 			<div class="right">
 
-				<!--Start of navigation bar-->
-				<nav class="web-nav">
+				<div class="nav-container">
+					<!--Start of navigation bar-->
+					<nav class="web-nav">
 
-					<!--creating navigation menu-->
-					<ul>
+						<!--creating navigation menu-->
+						<ul>
 
-						<!--listing all navigation menu items-->
-						<li><a href="index.html">Home</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a href="workexperience.html">Work Experience</a></li>
-						<li><a href="sitereport.html">Site Report</a></li>
-					</ul>
-					<!--closing of navigation menu-->
+							<!--listing all navigation menu items-->
+							<li><a href="index.html">Home</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="workexperience.html">Work Experience</a></li>
+							<li><a href="sitereport.html">Site Report</a></li>
+						</ul>
+						<!--closing of navigation menu-->
 
-				</nav>
+					</nav>
+				</div>
 				<!--Navigation bar ends-->
+				<div class="hamburger" type="checkbox">
+					<input type="checkbox" name="menu" id="menu">
+					<div class="bar-1"></div>
+					<div class="bar-2"></div>
+					<div class="bar-3"></div>
+				</div>
 
 			</div>
 			<!--right div ends here-->
@@ -158,7 +166,7 @@
 				<!--Newsletter subscription form start here-->
 				<!---Form is required to make submit property send an email-->
 				<!--Class given to identity this is footer-form only for newsletter subscription-->
-				<form class="footer-form">		
+				<form class="footer-form" action="mailto: aadarsha.2023107@nami.edu.np" method="post" enctype="text/plain">		
 					<input type="email" name="email-for-newsletter" placeholder="Write Your Email" onfocus="this.placeholder='';" required/>
 				<button type="submit" name="submit-button" class="subscribe-button"><i class="fa fa-paper-plane-o"></i></button>
 				</form>

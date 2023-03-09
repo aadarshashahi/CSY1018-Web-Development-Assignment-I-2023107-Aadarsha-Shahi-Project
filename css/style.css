@@ -137,10 +137,18 @@ footer h1 {
 	font-size: 22px;
 }
 
+
 @media only screen and (max-width: 900px) {
 
-	nav {
+	nav{
 		display: none;
+	}
+	header .right .hamburger div {
+		height: 3px;
+		width: 30px;
+		background-color: white;
+		display: block;
+		margin: 5px;
 	}
 	footer .main {
 		grid-template-columns: auto;
