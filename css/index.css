@@ -42,17 +42,6 @@
 	width: auto;
 }
 
-/*for grid-container div of section-3 only*/
-.section-3 .grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto;
-}
-
-/* for grid-element of section-2 only*/
-.section-3 .grid-element {
-	padding: 100px;
-}
-
 .section-4 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto auto;

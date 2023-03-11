@@ -25,6 +25,7 @@
 	padding: 20px;
 	background-color: #e1f6f4;
 	margin: 50px;
+	text-align: center;
 }
 .section-2 .master-div .blank {
 	background-color: #ecfeff;
@@ -47,3 +48,37 @@
 .section-2 .master-div .timeline .master-line {
 	height: 100px;
 }
+footer form button {
+	width: 40px;
+	height: 30px;
+	border-style: none;
+	background-color: #41d8bf;
+	font-weight: 200px;
+	font-size: 18px;
+}
+.section-4 img {
+	width: 200px;
+	height: auto;
+}
+.section-4 .grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.main-div {
+	width: 200px;
+    height: 10px;
+    background: red;
+}
+.inner-div {
+  width: 170px;
+  height: 10px;
+  background: black;
+  position: relative;
+  animation: mymove 5s;
+}
+
+@keyframes mymove {
+  0% {background: black; width:0px;}
+}
+

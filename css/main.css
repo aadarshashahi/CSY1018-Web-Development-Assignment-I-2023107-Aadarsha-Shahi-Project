@@ -39,3 +39,39 @@ section {
 	height: 400px;
 	width: auto;
 }
+
+.skill {
+	text-align: center;
+}
+
+/*for grid-container div of section-3 only*/
+.skill .grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 50px;
+}
+.skill h1, .main-paragraph {
+	margin: 25px auto;
+}
+.skill h1 {
+	margin-bottom: 0;
+}
+/* for grid-element of section-2 only*/
+.skill .grid-element {
+	padding: 100px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	margin: 10px;
+}
+
+.skill .grid-element p, a {
+	padding: 10px 0;
+}
+.skill .grid-element p i{
+	font-size: 48px;
+}
+.skill .grid-element:hover{
+	cursor: pointer;
+	color: #8594e4;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	transition: 0.5s;
+}
