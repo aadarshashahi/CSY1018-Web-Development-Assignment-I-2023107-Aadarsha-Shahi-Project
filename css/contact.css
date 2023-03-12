@@ -73,14 +73,4 @@ footer form button {
 	font-weight: 200px;
 	font-size: 18px;
 }
-.section-4 image {
-	width: 200px;
-	height: auto;
-}
-.section-4 .grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-}
-.section-4 .grid-container div {
-	
-}
+

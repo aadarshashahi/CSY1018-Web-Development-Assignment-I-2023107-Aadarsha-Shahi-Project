@@ -3,6 +3,9 @@
 	--fade1 : #e3f6f5;
 }
 /* setting body margin to 0*/
+html {
+	scroll-behavior: smooth;
+}
 * {
 	margin: 0;
 	font-family: Verdana;
@@ -28,7 +31,7 @@ header .right {
 	float: right;
 }
 header .right nav{
-	margin-top: 10px;
+	padding-top: 6px;
 }
 
 /* header ul style to none */
@@ -41,6 +44,7 @@ header a{
 	text-decoration: none;
 	color: #d9dad7;
 }
+
 header nav ul .hamburger {
 	display: none;
 	visibility: hidden;
@@ -137,7 +141,32 @@ footer h1 {
 	font-size: 22px;
 }
 
+header .left a:hover {
+  transition: 5s;
+  -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+  animation: glowing-text 1s ease-in-out infinite alternate;
+  cursor: pointer;
 
+}
+nav a:hover {
+	padding: 30px;
+	padding-bottom: 28.5px;
+	cursor: pointer;
+	transition: 1s;
+	background-color: #1249;
+}
+.active {
+	border-bottom: 2ps solid red;
+}
+@keyframes glowing-text {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
+  
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 @media only screen and (max-width: 900px) {
 
 	nav{

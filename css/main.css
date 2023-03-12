@@ -48,10 +48,13 @@ section {
 .skill .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	padding: 50px;
+	padding: 25px;
 }
 .skill h1, .main-paragraph {
 	margin: 25px auto;
+}
+.skill p {
+	margin-bottom: 0;
 }
 .skill h1 {
 	margin-bottom: 0;
