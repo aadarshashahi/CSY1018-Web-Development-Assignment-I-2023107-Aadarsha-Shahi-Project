@@ -1,23 +1,23 @@
 /*This is the main stylesheet for header and footer of the overall pages of the website*/
-:root {
-	--fade1 : #e3f6f5;
-}
+
 /* setting body margin to 0*/
 html {
 	scroll-behavior: smooth;
 }
-* {
-	margin: 0;
+body {
 	font-family: Verdana;
+	margin: 0;
 }
 
 /*adding design to header*/
 header {
 	padding: 20px;
-	background-color: #1239;
+	background: -webkit-linear-gradient(to right,  #1239, #1289);
+	background: linear-gradient(to right,  #1239, #1489);
 	color: #d9dad7;
 	position: sticky;
 	top: 0;
+	z-index: 999;
 }
 header div {
 	display: inline-block;
@@ -30,7 +30,7 @@ header .left {
 header .right {
 	float: right;
 }
-header .right nav{
+header .right .web-nav{
 	padding-top: 6px;
 }
 
@@ -44,10 +44,15 @@ header a{
 	text-decoration: none;
 	color: #d9dad7;
 }
-
-header nav ul .hamburger {
+.hamburger {
+	/*display: none;*/
+	height: fit-content;
+	cursor: pointer;
+	padding: 3px 8px;
+	transition: 0.2s;
+}
+.mobile-nav {
 	display: none;
-	visibility: hidden;
 }
 
 footer a{
@@ -56,7 +61,7 @@ footer a{
 }
 
 /*navigation-menu items inline */
-header nav ul li {
+header .web-nav ul li {
 	display: inline-block;
 	margin: 0;
 	padding: 0 20px;
@@ -64,7 +69,8 @@ header nav ul li {
 
 /*adding design to footer*/
 footer {
-	background-color: #1a2639;
+	background: -webkit-linear-gradient(to right,  #272343, #00204a);
+	background: linear-gradient(to right,  #272343, #00204a);
 	color: #d9dad7;
 	padding: 50px;
 	justify-content: center;
@@ -152,7 +158,7 @@ header .left a:hover {
   cursor: pointer;
 
 }
-nav a:hover {
+.web-nav a:hover {
 	padding: 30px;
 	padding-bottom: 28.5px;
 	cursor: pointer;
@@ -175,16 +181,44 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 900px) {
-
-	nav{
+	.web-nav {
 		display: none;
 	}
-	header .right .hamburger div {
-		height: 3px;
+	.mobile-nav{
+		display: block;
+		position: absolute;
+		left: -300px;
+		top: 0px;
+		z-index: 999;
+		width: 280px;
+		height: 100vh;
+		background: -webkit-linear-gradient(to right,  #3b4a6b, #1289);
+		background: linear-gradient(to right,  #3b4a6b, #1489);
+		transition: 0.2s;
+		box-shadow: 2px 0 20px 0 rgba(0. 0. 0. 0.05);
+	}
+	#mobile:checked ~ .mobile-nav {
+		left: 0;
+
+	}
+	.hamburger span {
 		width: 30px;
-		background-color: white;
+		height: 2px;
+		background: white;
 		display: block;
 		margin: 5px;
+	}
+	.mobile-nav ul li {
+		padding: 30px;
+	}
+	.mobile-nav ul li {
+		padding: 30px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.mobile-nav ul {
+		padding: 0 20px;
+		margin-top: 60px;
 	}
 	footer .main {
 		grid-template-columns: auto;
