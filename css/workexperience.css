@@ -1,0 +1,119 @@
+.section-2 {	
+	background: -webkit-linear-gradient(to right,  #afc5ff, #1D976C);
+	background: linear-gradient(to right,  #afc5ff, #8dc6ff);
+}
+.section-2 .grid-container {
+	display: grid;
+	grid-template-columns: 50px 600px;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #d5def5;
+	padding: 50px;
+}
+.section-2 .arrow {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 15px solid #8dc6ff;
+	border-bottom: 10px solid transparent;
+}
+.section-2 .content, .inner-content-div {
+	display: flex;
+}
+.section-2 .content {
+	width: 600px;
+}
+.section-2 .triangle {
+	margin-top: 5px;
+	margin-left: 20px;
+}
+.section-2 .inner-content-div {
+	background-color: #8dc6ff;
+}
+.section-2 .circle{
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #8dc6ff;
+}
+.section-2 .line {
+	height: 210px;
+	width: 5px;
+	background-color: #8dc6ff;
+	margin-left: 27px;
+}
+.section-2 h4 {
+	font-size: 12px;
+	font-weight: normal;
+}
+.section-2 h3, p, h4 {
+	padding: 20px;
+}
+.section-2 .content {
+	margin-top: 15px;
+}
+.section-2 .circle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section-2 h3 {
+	font-size: 18px;
+}
+.section-2 .content:hover {
+	margin-left: 20px;
+	margin-right: 0;
+	transition: 1s;
+}
+.section-4 {
+	background: -webkit-linear-gradient(to right,  #afc5ff, #1D976C);
+	background: linear-gradient(to right,  #afc5ff, #8dc6ff);
+}
+.section-4 .flex-container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.section-4 .card {
+	background-color: #e4f1fe;
+	padding: 30px;
+}
+.section-4 .circle {
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	background-color: white; 
+	border-style: solid;
+	border-width: 30px;
+	border-color: #cadefc;
+}
+.section-4 .card .circle p{
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section-4 .card .content h3 {
+	font-size: 28px;
+	margin: 30px 0;
+}
+.section-4 .card .content h5 {
+	font-size: 18px;
+	margin: 20px 0;
+	color: #606470;
+}
+.section-4 .card button {
+	background: -webkit-linear-gradient(to right,  #afc5ff, #1D976C);
+	background: linear-gradient(to right,  #afc5ff, #8dc6ff);
+}
+.section-4 .card:hover {
+	background: -webkit-linear-gradient(to right,  #626fe6, #6d42c7);
+	background: linear-gradient(to right,  #626fe6, #6d42c7);
+	transform: scale(1.02);
+	transition: 1s;
+}

@@ -4,12 +4,13 @@
 .section-1, .section-2 {
 	display: grid;
 	grid-template-columns: auto auto;
-	background-color: #edf7fa;
+	background-color: #fffcef;
 }
 
 /*overriding background colour of section 2*/
 .section-2 {
-	background-color: #f6f5f5;
+	background: -webkit-linear-gradient(to right,  #e4f1fe, #93deff);
+	background: linear-gradient(to right,  #e4f1fe,#93deff);
 }
 
 /*for section-1 left-inner div*/
@@ -41,7 +42,10 @@
 	height: 400px;
 	width: auto;
 }
-
+.section-4 {
+	background: -webkit-linear-gradient(to right,  #fdffcd, #e0ffcd);
+	background: linear-gradient(to right,  #e0ffcd, #fdffcd);
+}
 .section-4 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
@@ -53,6 +57,10 @@
 }
 .skill p {
 	padding: 0;
+}
+.section-5 {
+	background: -webkit-linear-gradient(to right,  #e4f1fe, #93deff);
+	background: linear-gradient(to right,  #e4f1fe,#93deff);
 }
 @media only screen and (max-width: 900px) {
 	.section-1, .section-2 {

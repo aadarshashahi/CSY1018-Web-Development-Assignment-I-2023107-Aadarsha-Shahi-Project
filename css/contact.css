@@ -1,7 +1,7 @@
 .section-1{
 	display: grid;
 	grid-template-columns: auto auto;
-	background-color: var(--fade1);
+	background-color: #fffcef;
 }
 .section-1 .right-div h2 {
 	font-size: 28px;
@@ -31,9 +31,13 @@
 .section-2 .grid-container .icon {
 	width: 20px;
 }
-.section-2, .section-2 .form form {
+.section-2{
 	display: flex;
-	background-color: #e4f1fe;
+	background: -webkit-linear-gradient(to right,  #afc5ff, #1D976C);
+	background: linear-gradient(to right,  #afc5ff, #8dc6ff);
+}
+.section-2 .form form {
+	display: flex;
 }
 .section-2 .form form input, textarea{ 
 	width: 280px;
@@ -49,7 +53,9 @@
 	height: 40px;
 	float: right;
 	margin-right: 10px;
-	background-color: #41d8bf;
+	background: -webkit-linear-gradient(to right,  #626fe6, #6d42c7);
+	background: linear-gradient(to right,  #626fe6, #6d42c7);
+	color: white;
 }
 .section-2 h3 {
 	font-size: 14px;

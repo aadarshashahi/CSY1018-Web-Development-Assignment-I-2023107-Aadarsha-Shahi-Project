@@ -58,6 +58,9 @@ section {
 .skill p {
 	margin-bottom: 0;
 }
+.skill .skill-title {
+	width: 80px;
+}
 
 .skill h1 {
 	margin-bottom: 0;
