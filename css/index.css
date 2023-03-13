@@ -4,7 +4,7 @@
 .section-1, .section-2 {
 	display: grid;
 	grid-template-columns: auto auto;
-	background-color: #bbe4e9;
+	background-color: #edf7fa;
 }
 
 /*overriding background colour of section 2*/

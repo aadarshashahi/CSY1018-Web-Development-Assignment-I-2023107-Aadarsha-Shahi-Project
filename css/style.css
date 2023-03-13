@@ -102,7 +102,10 @@ footer form button {
 	font-weight: 200px;
 	font-size: 18px;
 }
-
+footer form button:hover {
+	font-size: 22px;
+	transition: 1s;
+}
 /*margin setting for center div*/
 footer .center {
 	margin: 0 5%;
@@ -157,16 +160,20 @@ nav a:hover {
 	background-color: #1249;
 }
 .active {
-	border-bottom: 2ps solid red;
+  -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+  animation: glowing-text 1s ease-in-out infinite alternate;
 }
+
 @keyframes glowing-text {
   0% {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
-  
+  }
   100% {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+
 @media only screen and (max-width: 900px) {
 
 	nav{

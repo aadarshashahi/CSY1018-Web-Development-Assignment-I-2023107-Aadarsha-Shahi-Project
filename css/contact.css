@@ -12,6 +12,7 @@
 	grid-gap: 0;
 	height: 100px;
 	margin-right: 10%;
+
 }
 .grid-element {
 	padding: 10px 20px;
@@ -54,17 +55,7 @@
 	font-size: 14px;
 	font-weight: normal;
 }
-.section-3 div {
-	width: 600px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.section-3 div iframe {
-	height: 400px;
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 footer form button {
 	width: 40px;
 	height: 34px;

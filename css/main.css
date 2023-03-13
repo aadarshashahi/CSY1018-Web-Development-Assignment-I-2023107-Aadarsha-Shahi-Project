@@ -21,7 +21,9 @@ section {
 }
 
 .master-section {
-	background-color: #9fd3c7;
+	background: #1D976C;
+	background: -webkit-linear-gradient(to right,  #afc5ff, #1D976C);
+	background: linear-gradient(to right,  #afc5ff, #8dc6ff);
 	padding: 100px 0;
 	color: #ececec;
 }
@@ -56,6 +58,7 @@ section {
 .skill p {
 	margin-bottom: 0;
 }
+
 .skill h1 {
 	margin-bottom: 0;
 }
@@ -72,9 +75,24 @@ section {
 .skill .grid-element p i{
 	font-size: 48px;
 }
+.skill h1 {
+	margin-bottom: 20px;
+}
 .skill .grid-element:hover{
 	cursor: pointer;
 	color: #8594e4;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	transition: 0.5s;
+}
+.skill .grid-element p:hover{
+	transform: scale(1.5);
+	transition: 1s;
+}
+
+.read-more:hover {
+	font-size: 15px;
+	transition: 1s;
+}
+button:hover {
+	cursor: pointer;
 }
