@@ -2,6 +2,16 @@
 	background: -webkit-linear-gradient(to right,  #afc5ff, #1D976C);
 	background: linear-gradient(to right,  #afc5ff, #8dc6ff);
 }
+
+.section-2 .container {
+	background-color: #d5def5;
+	text-align: center;
+	padding-top: 50px;
+
+}
+.section-2 .container h2 {
+	font-family: 'Comfortaa';
+}
 .section-2 .grid-container {
 	display: grid;
 	grid-template-columns: 50px 600px;
@@ -80,7 +90,7 @@
 	transition: 1s;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 915px) {
 	.section-2 {
 		padding: 20px;
 	}
@@ -92,10 +102,39 @@
 		grid-template-columns: auto;
 		padding: 0;
 		padding-bottom: 20px;
-		width: 350px;
+		width: 650px;
 	}
 	.section-2 .box {
-		width: 300px;
+		width: 700px;
 	}
 
+}
+
+@media only screen and (max-width: 550px) {
+
+	.section-2 .grid-container {
+		max-width: 300px;
+	}
+	.section-2 .content {
+		max-width: 250px;
+	}
+}
+
+@media only screen and (max-width: 325px) {
+
+	.section-2 .container {
+		width: 250px;
+	}
+	#gridcontainer {
+		width: 250px;
+	}
+	.box {
+		width: 50px;
+	}
+	.section-2 .content {
+		width: 100px;
+	}
+	.inner-content-div {
+		width: 200px;
+	}
 }

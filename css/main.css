@@ -224,17 +224,15 @@ section {
 	transition: 1s;
 }
 
-.read-more:hover {
+main button:hover {
 	font-size: 15px;
 	transition: 1s;
 	font-family: 'Comfortaa';
-}
-button:hover {
 	cursor: pointer;
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 915px) {
 
 	.about-me {
 		display: flex;
@@ -264,15 +262,32 @@ button:hover {
 		font-size: 10px;
 	}
 	.skill .grid-element {
-		width: 100px;
-		height: 100px;
+		width: 300px;
+		height: 300px;
 		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.flex-card {
 		padding: 30px;
 	}
+	.card-1{
+		grid-area: item1;
+	}
+	.card-2{
+		grid-area: item2;
+	}
+	.card-3{
+		grid-area: item3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.flex-card .flex-container{
-		flex-direction: column;
+		display: grid;
+		grid-template-areas: 'item1 item2' 'item3 item3';
 	}
 	.flex-card .flex-container .card {
 		margin-top: 50px;
@@ -289,7 +304,58 @@ button:hover {
 		grid-template-columns: auto auto;
 	}
 	.gallery img {
-		width: 150px;
+		width: 300px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	
+	.flex-card .flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skill .grid-element {
+		width: 100px;
+		height: 100px;
+	}
+	.gallery img {
+		width: 120px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 325px) {
+	.master-section h1 {
+		font-size: 24px;
+	}
+	.master-section h4 {
+		font-size: 12px;
+	}
+	.about-me img {
+		width: 250px;
+		height: auto;
+	}
+	.skill .grid-container {
+		padding: 0;
+	}
+	.skill .grid-element {
+		width: 60px;
+		height: 80px;
+	}
+	.flex-card .card p, h3, h5{
+		font-size: 0.05em;
+	}
+	.card{
+		padding: 0;
+		width: 200px;
+	}
+	.card button {
+		width: 100px;
+	}
+	.gallery img {
+		width: 100px;
 		height: auto;
 	}
 }

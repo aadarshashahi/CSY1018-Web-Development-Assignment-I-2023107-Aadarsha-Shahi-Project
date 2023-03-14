@@ -86,7 +86,6 @@ footer form button {
 	font-size: 18px;
 }
 
-
 @media only screen and (max-width: 900px) {
 	.section-1 {
 		padding: 100px 20px;
@@ -141,4 +140,25 @@ footer form button {
 		margin-top: 20px;
 	}
 
+}
+
+@media only screen and (max-width: 325px) {
+
+	.section-2 .grid-container .grid-element .address{
+		font-size: 12px;
+	}
+	.section-2 .form {
+		width: 275px;
+	}
+	.section-2 .form {
+		width: 270px;
+	}
+	#name, #email, #subject, #message {
+		width: 220px;
+		padding: 10px;
+	}
+	.section-1 img {
+		width: 250px;
+		height: auto;
+	}
 }

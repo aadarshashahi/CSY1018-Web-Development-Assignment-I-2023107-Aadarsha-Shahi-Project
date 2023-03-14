@@ -193,7 +193,7 @@ footer form button {
 .content-mobile {
 	display: none;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 915px) {
 
 	.mobile-nav ul{
 		float: left;
@@ -202,10 +202,13 @@ footer form button {
 	.section-2 {
 		padding: 20px;
 	}
-	.section-2 .grid-container{
+	.master-div {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
+
 	.section-2 .main-div {
 		width: 300px;
 	}
@@ -213,10 +216,10 @@ footer form button {
 	  	width: 255px;
 	}
 	.section-2 .css, .communication {
-	  	width: 155px;
+	  	width: 240px;
 	}
 	.section-2 .javascript, .illustrator{
-	  	width: 260px;
+	  	width: 160px;
 	}
 	.section-2 .teamwork {
 		width: 280px;
@@ -235,7 +238,7 @@ footer form button {
 		display: flex;
 		margin-left: auto;
 		margin-right: auto;
-		width: 800px;
+		max-width: 800px;
 	}
 	.h3-academic {
 		font-family: 'Comfortaa';
@@ -267,13 +270,66 @@ footer form button {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 400px;
+		max-width: 400px;
 	}
 	.section-3 .content-left {
 		margin-bottom: 10px;
 		margin-top: 10px;
 		padding: 0;
 	}
+}
+
+@media only screen and (max-width: 550px) {
+		.section-2 .grid-container {
+			display: flex;
+			flex-direction: column;
+		}
+		.section-3 .master-div {
+			max-width: 350px;
+		}
+}
+
+@media only screen and (max-width: 325px) {
+
+	.section-2 .main-div {
+		width: 200px;
+	}
+
+	.section-2 .html, .photoshop, .creativity {
+	  	width: 170px;
+	}
+	.section-2 .css, .communication {
+	  	width: 160px;
+	}
+	.section-2 .javascript, .illustrator{
+	  	width: 110px;
+	}
+	.section-2 .teamwork {
+		width: 185px;
+	}
+	.section-2 .projectmanagement {
+		width: 160px;
+	}
+	.section-2 .leadership {
+		width: 195px;
+	}
+	.section-3 .master-div {
+		width: 270px;
+	}
+	.section-3 .left-div {
+		width: 200px;
+	}
+	.section-3 .content-mobile{
+		margin: 0px;
+		width: 230px;
+		padding: 0;
+		padding-top: 20px;
+	}
+	#left-div {
+		width: 230px;
+		height: 250px;
+	}
+
 }
 
 
