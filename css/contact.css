@@ -1,11 +1,32 @@
 .section-1{
 	display: grid;
 	grid-template-columns: auto auto;
-	background-color: #fffcef;
+	background: -webkit-linear-gradient(to right,  #e0ffcd, #80ffdb);
+	background: linear-gradient(to right,  #feffdf, #feffea);
+}
+.section-1 img {
+	height: 500px;
+	width: auto;
+}
+.section-1 .right-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	margin-left: 50px;
 }
 .section-1 .right-div h2 {
-	font-size: 28px;
+	font-family: 'Comfortaa';
+	font-size: 48px;
+	margin-bottom: 30px;
 }
+
+.section-1 h2, p {
+	font-family: '"Jungle';
+	line-height: 30px;
+	font-size: 22px;
+}
+
 .section-2 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -14,20 +35,17 @@
 	margin-right: 10%;
 
 }
+
+.address {
+	font-family: 'Comfortaa';
+	font-size: 14px;
+}
+
 .grid-element {
 	padding: 10px 20px;
 }
-.section-1 h2, p {
-	font-size: 36px;
-	padding: 100px 50px 0 50px;
-}
-.section-1 p {
-	font-size: 22px;
-	padding-top: 30px;
-}
-.section-2 .grid-container .icon h3 {
-	font-size: 8px;
-}
+
+
 .section-2 .grid-container .icon {
 	width: 20px;
 }
@@ -53,14 +71,11 @@
 	height: 40px;
 	float: right;
 	margin-right: 10px;
-	background: -webkit-linear-gradient(to right,  #626fe6, #6d42c7);
-	background: linear-gradient(to right,  #626fe6, #6d42c7);
+	background: -webkit-linear-gradient(to right, #192294, #5254d8);
+	background: linear-gradient(to right, #192294, #5254d8);
 	color: white;
 }
-.section-2 h3 {
-	font-size: 14px;
-	font-weight: normal;
-}
+
 
 footer form button {
 	width: 40px;
@@ -71,3 +86,59 @@ footer form button {
 	font-size: 18px;
 }
 
+
+@media only screen and (max-width: 900px) {
+	.section-1 {
+		padding: 100px 20px;
+	}
+	.section-1 img {
+		width: 300px;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.section-1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.section-1 .right-div h2 {
+		font-size: 32px;
+	}
+	.section-1 .right-div p {
+		text-align: justify;
+	}
+	.section-1 .right-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+	}
+	.section-2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.section-2 .grid-container {
+		padding-bottom: 100px;
+	}
+	.section-2 .form form {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-2 .form form div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.section-2 .form div input {
+		margin: 0;
+	}
+	.section-2 .form form div textarea{
+		margin-top: 20px;
+	}
+
+}

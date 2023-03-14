@@ -1,7 +1,7 @@
 /*this is the CSS property applied for <main> part of index.html page only*/
 
 /*for common property of section-1 and 2*/
-.section-1, .section-2 {
+.home-section-1, .section-2 {
 	display: grid;
 	grid-template-columns: auto auto;
 	background: -webkit-linear-gradient(to right,  #fdffcd, #e0ffcd);
@@ -15,91 +15,142 @@
 }
 
 /*for section-1 left-inner div*/
-.section-1 .left-inner {
+.home-section-1 .left-inner {
 	padding-right: 50px;
 }
 
 /*for h6 tag of section-1 only*/
-.section-1 h6 {
+.home-section-1 h6 {
 	font-size: 28px;
+	font-weight: normal;
+	font-family: 'Comfortaa';
+	margin-bottom: 20px;
 }
 
 /*for h1 tag of section-1 only*/
-.section-1 h1 {
+.home-section-1 h1 {
 	font-size: 48px;
+	font-family: 'Comfortaa';
+	margin-bottom: 20px;
 }
 
 /*for p tag of section-1 only*/
-.section-1 p {
-	font-size: 18px;
+.home-section-1 p {
+	font-size: 22px;
+	font-family: 'Jungle';
+	text-align: justify;
+	padding-top: 0;
+	line-height: 30px;
 }
 
 /*for common property of h6, h1 and p*/
-.section-1 h6, h1, p {
+.home-section-1 h2, p {
 	padding-top: 50px;
 }
 
-.section-1 img, .section-2 img {
-	height: 400px;
+.home-section-1 img, .section-2 img {
+	height: 500px;
 	width: auto;
 }
-.section-4 {
-	background: -webkit-linear-gradient(to right,  #fdffcd, #e0ffcd);
-	background: linear-gradient(to right,  #e0ffcd, #fdffcd);
-	text-align: center;
+.home-section-1 .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.section-4 .grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto;
-}
-.section-4 img {
-	width: 300px;
-	height: auto;
-}
-.section-4 h1 {
-	margin: 10px;
-}
-.section-4 p {
-	margin-bottom: 40px;
-}
-.section-4 .grid-item {
-	padding: 0;
-	grid-gap: 0;
+.gallery h2 {
+	margin-block: 20px;
 }
 .skill p {
 	padding: 0;
 }
-.section-4 img:hover {
-	transform: scale(1.2);
-	transition: 1s;
-}
+
 @media only screen and (max-width: 900px) {
-	.section-1, .section-2 {
-		display: grid;
-		grid-template-columns: auto;
+
+	.home-section-1 {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+		margin-top: 0;
 	}
-	.section-3 .grid-container, .section-4 .grid-container {
-		display: grid;
-		grid-template-columns: auto auto;
-	}
-	.section-1 img{
-	padding-top: 50px;
-	}
-	.section-2 img{
-	padding-bottom: 50px;
-	}
-	.section-2 .grid-container {
-		display: grid;
-		grid-template-columns: auto auto;
-	}
-	.section-2 .right .right-inner p{
-		font-size: 18px;
-	}
-	section h1 {
-		font-size: 20px;
-	}
-	section p {
-		font-size: 8px;
+	.home-section-1 .left-inner{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-right: 0;
 	}
 
+	.home-section-1 h6{
+		font-size: 22px;
+	}
+	.home-section-1 h1 {
+		font-size: 28px;
+	}
+	.home-section-1 p {
+		font-size: 18px;
+		text-align: justify;
+	}
+	.home-section-1 img {
+		width: 200px;
+		height: auto;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-me {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+	}
+	.about-me .left-inner, .right-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.about-me img {
+		width: 200px;
+		height: auto;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+	.skill {
+		padding: 30px;
+	}
+	.skill .grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.skill .grid-container p {
+		font-size: 10px;
+	}
+	.skill .grid-element {
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+	}
+	.flex-card {
+		padding: 30px;
+	}
+	.flex-card .flex-container{
+		flex-direction: column;
+	}
+	.flex-card .flex-container .card {
+		margin-top: 50px;
+	}
+	.gallery {
+		padding: 10px;
+		padding-top: 100px;
+	}
+	.gallery h2{
+		font-size: 28px;
+	}
+	.gallery .grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.gallery img {
+		width: 150px;
+		height: auto;
+	}
 }
